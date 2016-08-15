@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 	if (sfd == -1)
 		abort();
 
-	sfd = make_socket_non_blocking(sfd);
+	s = make_socket_non_blocking(sfd);
 	if (s == -1)
 		abort();
 
